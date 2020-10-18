@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<style>
+			body {
+				font-family: sans-serif;
+			}
+			.survey-qns {
+				margin-top: 20px;
+				padding: 10px 10px 10px 10px;
+			}
+			form {
+				background-color: pink;
+			}
+			#submit {
+				background-color: yellow;
+				border-color: transparent;
+				font-size: 20px;
+			}
+			.box-control {
+				display: block;
+			  	width: 40%;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<h1 id="title">Canadian Cities</h1>
+
+		<p id="description"><em>An opinion poll!</em></p>
+
+		<form id="survey-form">
+
+			<div class="survey-qns">
+			<label id="name-label" for="name">Name</label>
+			</br></br>
+			<input class="box-control" required type="text" id="name" placeholder="Type your name">
+			</div>
+
+
+			<div class="survey-qns">
+			<label id="email-label" for="email">Email</label>
+			</br></br>
+			<!-- validate email format via type="email" -->
+			<input class="box-control" required type="email" id="email" placeholder="Type your email">
+			</div>
+				
+			
+			<div class="survey-qns">
+			<label id="number-label" for="number">
+				Rate <strong>Vancouver</strong> on a scale from 1 (low) to 5 (high)
+			</label>
+			</br></br>
+			<!-- validate against non-numbers via type="number"-->
+			<!-- validate against range via min and max -->
+			<input class="box-control" required type="number" id="number" min="1" max="5" step="1" placeholder="Rating">
+			</div>
+
+
+			<div class="survey-qns">
+			<label id="dropdown-label" for="dropdown">
+				How would you describe the geographical location of <strong>Toronto</strong>?
+			</label>
+			</br></br>
+			<select required id="dropdown" name="dropdown">
+				<option value="" selected disabled="">Select one</option>
+				<option value="West Coast">West Coast</option>
+				<option value="Midwest">Midwest</option>
+				<option value="Central Canada">Central Canada</option>
+				<option value="East Coast">East Coast</option>
+			</select>
+			</div>
+
+			<div class="survey-qns">
+			<label id="radio-label" for="radio">
+				Do you like <strong>Edmonton</strong>?
+			</label>
+			</br></br>
+			<label for="radio-yes">
+				<input type="radio" id="radio-yes" name="edmonton" value="Yes">
+				Yes
+			</label>
+			
+			<label for="radio-no">
+				<input type="radio" id="radio-no" name="edmonton" value="No">
+				No
+			</label>
+			
+			<label for="radio-neutral">
+				<input type="radio" id="radio-neutral" name="edmonton" value="Neutral">
+				Neutral
+			</label>
+			</div>
+
+			<div class="survey-qns">
+			<label id="checkbox">
+				How would you describe <strong>Québec City</strong>
+			</label>
+			</br></br>
+			<input type="checkbox" id="Québécois" value="Québécois">
+			<label for="Québécois">Québécois</label>
+			
+			<input type="checkbox" id="Different" value="Different">
+			<label for="Different">Different</label> 
+
+			<input type="checkbox" id="Meh" value="Meh">
+			<label for="Meh">Meh</label>
+
+			<input type="checkbox" id="It's something else" value="It's something else">
+			<label for="It's something else">It's something else</label>
+			</div>
+
+			<div class="survey-qns">
+			Tell us your thoughts about <strong>Montréal</strong>
+			</br></br>
+			<textarea form="survey-form" class="box-control">Montréal is ...</textarea>
+			</div>
+
+			<div class="survey-qns">
+				<button type="submit" id="submit">Submit</button>
+			</div>
+			
+
+		</form>
+
+	</body>
+</html>

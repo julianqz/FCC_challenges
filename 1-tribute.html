@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<style>
+			#title {
+				font-family: sans-serif;
+				background-color: pink;
+				text-align: center;
+			}
+			#quote {
+				font-style: italic;
+			}
+			#main {
+				font-family: sans-serif;
+				background-color: #eee;
+				text-align: center;
+			}
+			#image {
+				/* #8 responsively resize */
+				max-width: 100%; 
+
+				/* #9 center witihin parent element 
+			       both necessary
+				*/
+				display: block;
+				margin: auto;
+
+				padding-top: 10px;
+			}
+			#img-caption {
+				font-style: italic;
+				padding-top: 10px;
+			}
+			#tribute-info {
+				background-color: white;
+				padding-top: 25px;
+			}
+			#timeline {
+				text-align: left;
+				max-width: 600px;
+				margin: 25px auto 25px auto; /* TRBL */
+				line-height: 1.5;
+			}
+			li {
+				margin: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header id="title">
+			<h1>Dr. César Milstein</h1>
+			<p id="quote">"Science will only fulfill its promises when the benefits are equally shared by the really poor of the world."</p>
+		</header>
+
+		<main id="main">
+
+			<figure id="img-div">
+
+				<img id="image" src="https://i.ibb.co/3CHK1SQ/dr-cesar-milstein-nobel-prize-winners.png" alt="Photo of César Milstein">
+
+				<figcaption id="img-caption">César Milstein, one of the fathers of the hybridoma technology for producing monoclonal antibodies.</figcaption>
+
+			</figure>
+
+			<section id="tribute-info">
+				
+				<p>Here's a brief timeline of César Milsatein's scientific career:</p>
+
+				<ul id="timeline">
+					<li>1927: Born in Argentina</li>
+					<li>1958: Joined the Biochemistry Department at the University of Cambridge</li>
+					<li>1975: Elected Fellow of the Royal Soceity</li>
+					<li>1980: Awarded the Louisa Gross Horwitz Prize</li>
+					<li>1980: Awarded the Wolf Prize in Medicine</li>
+					<li>1981: Awarded the William Bate Hardy Prize</li>
+					<li>1981: Awarded the Sir Hans Krebs Medal</li>
+					<li>1982: Awarded the Franklin Medal</li>
+					<li>1984: Awarded the Nobel Prize in Physiology or Medicine</li>
+					<li>1989: Awarded the Copley Medal</li>
+					<li>1993: Awarded the Diamond Knoex Award of Argentina</li>
+					<li>2002: Died in Cambridge, England, UK</li>
+					<li>2010: The documentary "Un fueguito, la historia de César Milstein" released</li>
+				</ul>
+
+				<p>For more info about César Milstein's life, visit <a id="tribute-link" href="https://en.wikipedia.org/wiki/C%C3%A9sar_Milstein" target="_blank">his Wikipedia page</a>.</p>
+
+			</section>
+
+		</main>
+
+	</body>
+</html>
